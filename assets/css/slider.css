@@ -1,0 +1,120 @@
+
+.carousel-container {
+  width: 70%; /* Changed to 70% */
+  margin: auto;
+  overflow: hidden;
+  position: relative; /* Added position: relative; for positioning the buttons */
+  background-color: #1978FF;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+object-position: center;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+}
+
+.prev {
+  left: 10px; /* Added border to the previous button */
+}
+
+.next {
+  right: 10px;
+}
+
+@media screen and (min-width: 120px) and (max-width: 990px) {
+  .acc1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2em;
+    
+  }
+  
+}
+
+@media screen and (min-width: 120px) and (max-width: 990px) {
+ .acc1 p{
+    width: 100% !important;
+   
+  }
+  
+}
+@media screen and (min-width: 120px) and (max-width: 990px) {
+ .acc1 .carousel-container{
+    width: 100% !important;
+   
+  }
+  .carousel{
+    width: 100% !important;
+  }
+  .acc1 img{
+    width: 100% !important;
+
+  }
+  .rousel{
+    width: 100% !important;
+
+  }
+
+} 
+
+
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modal-content {
+  height: 100%;
+  object-fit: contain; /* This ensures the image maintains its aspect ratio */
+}
+
+#enlarge-text {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 50%;
+  padding-top: 2em;
+  transform: translate(-50%, -50%);
+  color: #1978FF;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 120px) and (max-width: 600px) {
+	#enlarge-text {
+ padding-bottom: 1em;
+ 
+   
+  }
+}

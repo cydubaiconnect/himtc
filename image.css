@@ -1,0 +1,16 @@
+   #image-container {
+      text-align: center;
+    }
+
+    /* Style the image to ensure it fits within the container initially */
+    #zoomed-image {
+      max-width: 100%;
+      max-height: 100%;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Apply a zoom effect when the image is clicked */
+    #zoomed-image.zoomed-in {
+      transform: scale(1.5); /* You can adjust the scale factor for the zoom level */
+    }
